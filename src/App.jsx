@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import profilePic from './assets/profile.jpg'; // Pastikan file ini ada
-import portfolioImage from './assets/image.png'; // <-- CONTOH CARA IMPORT GAMBAR NANTI
+import portfolioImage from './assets/image.png';
+import bugReportImage from './assets/Pelaporan Bug.png';
 
 // --- TAMBAHAN: CSS Sederhana untuk animasi fade-in ---
 const styles = `
@@ -27,15 +28,15 @@ const ProjectsSection = () => {
       github: "https://github.com/Mumtaz04?tab=repositories", // Ganti link github asli
       demo: "#" // Link demo jika ada (atau biarkan #)
     },
- //   {
- //     id: 2,
- //     title: "Sistem Informasi Manajemen",
- //     description: "Aplikasi berbasis web untuk manajemen data inventory barang menggunakan PHP Laravel dan MySQL.",
- //     image: "https://placehold.co/600x400/1e293b/white?text=Laravel+Project",
- //     tech: ["Laravel", "MySQL", "Bootstrap", "PHP"],
- //     github: "https://github.com/Mumtaz04",
- //     demo: "#"
- //   },
+   {
+     id: 2,
+     title: "Pengajuan Bug",
+     description: "Aplikasi pengajuan bug telah ditemukan sebuah bug pada aplikasi client yang menyebabkan aplikasi tidak berjalan sebagaimana mestinya. Bug ini muncul ketika pengguna melakukan [jelaskan aksi pengguna, misalnya login / submit data / membuka menu tertentu].",
+     image: bugReportImage,
+     tech: ["HTML", "Tailwind CSS", "JavaScript (Framework Vue)"],
+      github: "https://github.com/Mumtaz04",
+     demo: "#"
+   },
  //   {
 //      id: 3,
 //      title: "AI Image Classifier",
@@ -198,8 +199,8 @@ const Sidebar = ({ activeTab, setActiveTab, isOpen, setIsOpen }) => {
                 <h2 className="text-white font-bold text-xl leading-tight text-center">Mumtaz</h2>
                 <p className="text-sm text-slate-500 mb-4 text-center">Software Engineer</p>
                 <a 
-                  href="/cv.pdf"
-                  download="CV_Mumtaz_FN.pdf"
+                  href="CV NEW 1.pdf"
+                  download="CV NEW 1.pdf"
                   className="px-4 py-2 bg-slate-800 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 rounded-full text-xs font-bold transition-all duration-300 flex items-center gap-2 mb-2 group"
                 >
                   <i className="fas fa-download group-hover:animate-bounce"></i> Download CV
@@ -328,10 +329,10 @@ const HomeSection = ({ setTab }) => {
            <h3 className="text-white font-bold mb-2 group-hover:text-blue-400">Absensi</h3>
            <p className="text-slate-400 text-sm">HTML, Typescript, Tailwind CSS (SCSS), JavaScript </p>
         </div>
-        {/*<div onClick={() => setTab('projects')} className="bg-[#1e293b] p-6 rounded-xl border border-slate-700 hover:border-blue-500 cursor-pointer transition group">
-           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400">Sistem Inventory</h3>
-           <p className="text-slate-400 text-sm">Laravel, MySQL</p>
-        </div>*/}
+        {<div onClick={() => setTab('projects')} className="bg-[#1e293b] p-6 rounded-xl border border-slate-700 hover:border-blue-500 cursor-pointer transition group">
+           <h3 className="text-white font-bold mb-2 group-hover:text-blue-400">Pelaporan Bug</h3>
+           <p className="text-slate-400 text-sm">HTML, Tailwind CSS (SCSS), JavaScript </p>
+        </div>}
       </div>
     </div>
   );
@@ -392,7 +393,7 @@ const AboutSection = () => (
               <div><p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Status</p><span className="inline-block px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full font-bold mt-1">Open to Work</span></div>
             </div>
           </div>
-          <a href="/cv.pdf" download="CV_Mumtaz_FN.pdf" className="w-full mt-8 bg-cyan-500 hover:bg-cyan-600 text-[#0f172a] font-bold py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 cursor-pointer"><i className="fas fa-download"></i> Download CV</a>
+          <a href="cv.pdf" download="CV_Mumtaz_FN.pdf" className="w-full mt-8 bg-cyan-500 hover:bg-cyan-600 text-[#0f172a] font-bold py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 cursor-pointer"><i className="fas fa-download"></i> Download CV</a>
         </div>
       </div>
     </div>
