@@ -199,8 +199,8 @@ const Sidebar = ({ activeTab, setActiveTab, isOpen, setIsOpen }) => {
                 <h2 className="text-white font-bold text-xl leading-tight text-center">Mumtaz</h2>
                 <p className="text-sm text-slate-500 mb-4 text-center">Software Engineer</p>
                 <a 
-                  href="CV NEW 1.pdf"
-                  download="CV NEW 1.pdf"
+                  href="/MUMTAZ FIKRI NASRULLAH CV.pdf"
+                  download="MUMTAZ FIKRI NASRULLAH CV.pdf"
                   className="px-4 py-2 bg-slate-800 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 rounded-full text-xs font-bold transition-all duration-300 flex items-center gap-2 mb-2 group"
                 >
                   <i className="fas fa-download group-hover:animate-bounce"></i> Download CV
