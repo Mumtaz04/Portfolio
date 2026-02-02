@@ -199,8 +199,8 @@ const Sidebar = ({ activeTab, setActiveTab, isOpen, setIsOpen }) => {
                 <h2 className="text-white font-bold text-xl leading-tight text-center">Mumtaz</h2>
                 <p className="text-sm text-slate-500 mb-4 text-center">Software Engineer</p>
                 <a 
-                  href="/Portfolio/cv.pdf"
-                  download="MUMTAZ FIKRI NASRULLAH CV.pdf"
+                  href="./cv.pdf"
+                  download="MUMTAZ_FIKRI_NASRULLAH_CV.pdf"
                   className="px-4 py-2 bg-slate-800 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 rounded-full text-xs font-bold transition-all duration-300 flex items-center gap-2 mb-2 group"
                 >
                   <i className="fas fa-download group-hover:animate-bounce"></i> Download CV
@@ -393,7 +393,7 @@ const AboutSection = () => (
               <div><p className="text-xs text-slate-500 uppercase font-bold tracking-wider">Status</p><span className="inline-block px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full font-bold mt-1">Open to Work</span></div>
             </div>
           </div>
-          <a href={`${import.meta.env.BASE_URL}cv.pdf`} download="MUMTAZ FIKRI NASRULLAH CV.pdf" className="w-full mt-8 bg-cyan-500 hover:bg-cyan-600 text-[#0f172a] font-bold py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 cursor-pointer"><i className="fas fa-download"></i> Download CV</a>
+          <a href="./cv.pdf" download="MUMTAZ_FIKRI_NASRULLAH_CV.pdf" className="w-full mt-8 bg-cyan-500 hover:bg-cyan-600 text-[#0f172a] font-bold py-4 rounded-xl transition flex items-center justify-center gap-2 shadow-lg shadow-cyan-500/20 cursor-pointer"><i className="fas fa-download"></i> Download CV</a>
         </div>
       </div>
     </div>
