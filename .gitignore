@@ -24,8 +24,8 @@ dist-ssr
 *.sw?
 
 # AI Agent rules and workflows (personal) & Screenshot folder
-.agent/
-ss/
+#.agent/
+#ss/
 
 # Config file (contains sensitive data)
 src/config.ts
